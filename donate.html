@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-Rise Foundation | Donate</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="image/logo.png" alt="R-Rise Foundation Logo">
+        </div>
+        <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav class="site-nav" id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="donate.html" class="active-page">Donate</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="donate section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="eyebrow">Donate</p>
+                    <h2>Make a meaningful impact today.</h2>
+                </div>
+                <div class="form-grid" style="max-width: 900px; margin: 0 auto;">
+                    <form id="donate-form" class="form-card" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="426b0a50-15cb-47cc-b42e-741ea32689d0">
+                        <input type="hidden" name="redirect" value="donate.html?status=success">
+                        <h3>Secure Donation</h3>
+                        <label for="donor-name">Full Name</label>
+                        <input type="text" id="donor-name" name="name" placeholder="Your name" required>
+
+                        <label for="donor-email">Email Address</label>
+                        <input type="email" id="donor-email" name="email" placeholder="you@example.com" required>
+
+                        <label for="donation-amount">Donation Amount (USD)</label>
+                        <input type="number" id="donation-amount" name="amount" placeholder="50" min="5" required>
+
+                        <button type="submit">Donate Now</button>
+                        <p id="donate-status" class="status-message"></p>
+                    </form>
+
+                    <div class="donation-benefits card">
+                        <h3>Why Your Gift Matters</h3>
+                        <ul>
+                            <li>Direct support for health and education programs.</li>
+                            <li>Transparent tracking of each donation.</li>
+                            <li>Community-driven outcomes with lasting change.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Breakdown Section -->
+        <section class="section impact-breakdown-section">
+            <div class="section-header">
+                <p class="eyebrow">Your Impact</p>
+                <h2>Where Your Money Goes</h2>
+                <p>See exactly how your donation creates change in our community.</p>
+            </div>
+            <div class="impact-cards-grid">
+                <div class="impact-card">
+                    <div class="impact-amount">$10</div>
+                    <h4>School Supplies</h4>
+                    <p>Provides notebooks, pens, and learning materials for one child for one month.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-amount">$25</div>
+                    <h4>Basic Health Checkup</h4>
+                    <p>Covers routine medical examination and preventative health screening for a child.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-amount">$50</div>
+                    <h4>Monthly Nutrition Support</h4>
+                    <p>Ensures a child receives supplementary nutrition and balanced meals for one month.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-amount">$100</div>
+                    <h4>Educational Scholarship</h4>
+                    <p>Covers one child's school fees, uniform, and supplies for an entire term.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-amount">$250</div>
+                    <h4>Vocational Training</h4>
+                    <p>Provides skills training and tools for a youth to learn a trade or craft.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-amount">$500</div>
+                    <h4>Community Health Program</h4>
+                    <p>Funds a health awareness and vaccination clinic serving an entire neighborhood.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Badges Section -->
+        <section class="section trust-badges-section">
+            <div class="trust-badges-container">
+                <div class="trust-badge">
+                    <span class="badge-icon">🔒</span>
+                    <p>Secure Payment</p>
+                </div>
+                <div class="trust-badge">
+                    <span class="badge-icon">✓</span>
+                    <p>Verified Foundation</p>
+                </div>
+                <div class="trust-badge">
+                    <span class="badge-icon">📊</span>
+                    <p>Transparent Reporting</p>
+                </div>
+                <div class="trust-badge">
+                    <span class="badge-icon">🌍</span>
+                    <p>Community Driven</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section faq-section">
+            <div class="section-header">
+                <p class="eyebrow">Questions?</p>
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about donating to R-Rise Foundation.</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">Is my donation tax-deductible?</button>
+                    <div class="faq-answer">
+                        <p>Yes! R-Rise Foundation is a registered nonprofit organization. Donations may be tax-deductible depending on your country's tax laws. We recommend consulting with your tax advisor or requesting our tax documentation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Can I donate in person or by bank transfer?</button>
+                    <div class="faq-answer">
+                        <p>Absolutely. In addition to online donations, we accept bank transfers and in-person donations. Please contact us at donations@rrise-foundation.org for bank details or to arrange an in-person visit.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">How often do you provide impact reports?</button>
+                    <div class="faq-answer">
+                        <p>We publish quarterly impact updates for all donors, showing program outcomes, beneficiary stories, and financial summaries. Annual comprehensive reports are also available on our website.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Can I restrict my donation to a specific program?</button>
+                    <div class="faq-answer">
+                        <p>Yes! During the donation process, you can specify whether your gift supports education, health, or community outreach programs. We honor donor intent while maintaining flexibility to address urgent community needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">What percentage of donations go directly to beneficiaries?</button>
+                    <div class="faq-answer">
+                        <p>We maintain a lean operational structure to ensure 85% of donations directly fund programs. Administrative and fundraising costs are kept minimal. Detailed breakdowns are available in our annual reports.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Is my donation information kept confidential?</button>
+                    <div class="faq-answer">
+                        <p>Absolutely. We protect donor privacy and never share personal information without explicit consent. Our payment processing uses industry-standard encryption for maximum security.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 R-Rise Foundation. Designed with yellow energy and navy strength.</p>
+    </footer>
+</body>
+</html>

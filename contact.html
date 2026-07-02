@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-Rise Foundation | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="image/logo.png" alt="R-Rise Foundation Logo">
+        </div>
+        <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav class="site-nav" id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html" class="active-page">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Connect with us as a supporter, volunteer, or partner.</h2>
+                </div>
+                <div style="max-width: 600px; margin: 0 auto;">
+                    <form class="form-card" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="426b0a50-15cb-47cc-b42e-741ea32689d0">
+                        <h3>Send us a Message</h3>
+                        <div class="contact-grid">
+                            <div>
+                                <label for="supporter-name">Full Name</label>
+                                <input type="text" id="supporter-name" name="name" placeholder="Your full name" required>
+                            </div>
+                            <div>
+                                <label for="supporter-email">Email Address</label>
+                                <input type="email" id="supporter-email" name="email" placeholder="you@example.com" required>
+                            </div>
+                            <div>
+                                <label for="supporter-role">Role</label>
+                                <select id="supporter-role" name="role" required>
+                                    <option value="Donor">Donor</option>
+                                    <option value="Volunteer">Volunteer</option>
+                                    <option value="Inquirer">Inquirer</option>
+                                </select>
+                            </div>
+                            <div class="full-width">
+                                <label for="supporter-message">Message</label>
+                                <textarea id="supporter-message" name="message" rows="5" placeholder="Tell us how we can help or how you want to get involved."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit">Send Message</button>
+                        <p id="contact-status" class="status-message"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 R-Rise Foundation. Designed with yellow energy and navy strength.</p>
+    </footer>
+</body>
+</html>
