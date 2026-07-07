@@ -42,14 +42,27 @@ textarea {
 }
 
 .site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    background: var(--surface);
-    position: relative;
-    z-index: 10;
-    box-shadow: 0 4px 12px var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: var(--primary); /* Keeps it that professional deep navy blue */
+  position: -webkit-sticky; /* For Safari support */
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Keeps it on top of all scrolling content */
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+/* This makes sure your navigation links stay highly visible and bright yellow */
+.site-header a {
+  color: var(--secondary) !important;
+  text-decoration: none;
+}
+
+/* This turns the links white smoothly when someone hovers over them */
+.site-header a:hover {
+  color: #ffffff !important;
 }
 
 .logo-container img {
